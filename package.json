@@ -2,15 +2,19 @@
   "name": "react-trychess",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http:/byGaboMg.github.io/Chess-ESCOM",
   "dependencies": {
     "chess.js": "^1.0.0-beta.8",
     "cra-template": "1.2.0",
+    "gh-pages": "^6.2.0",
     "react": "^19.0.0",
     "react-chessboard": "^4.7.2",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
