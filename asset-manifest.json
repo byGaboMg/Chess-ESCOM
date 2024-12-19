@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Chess-ESCOM/static/css/main.42cc5817.css",
+    "main.js": "/Chess-ESCOM/static/js/main.257612b0.js",
+    "static/js/488.2403f6fd.chunk.js": "/Chess-ESCOM/static/js/488.2403f6fd.chunk.js",
+    "index.html": "/Chess-ESCOM/index.html",
+    "main.42cc5817.css.map": "/Chess-ESCOM/static/css/main.42cc5817.css.map",
+    "main.257612b0.js.map": "/Chess-ESCOM/static/js/main.257612b0.js.map",
+    "488.2403f6fd.chunk.js.map": "/Chess-ESCOM/static/js/488.2403f6fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42cc5817.css",
+    "static/js/main.257612b0.js"
+  ]
+}
