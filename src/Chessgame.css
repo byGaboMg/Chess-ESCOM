@@ -1,0 +1,88 @@
+.button-container {
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chessc{
+    margin: 20px;
+    height: 600px;
+    width: 600px;
+}
+@media only screen and (max-width: 600px) {
+    .chessc {
+        margin: 20px;
+        height: 400px;
+        width: 400px;
+    }
+  }
+.movements{
+    color: #ffffff;
+    font-size: 25px;   
+}
+
+.edit-post {
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .edit-tooltip {
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 150px;
+  }
+  
+  .edit-tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .edit-post:hover .edit-tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .edit-icon {
+    font-size: 30px;
+  }
+  
+  .edit-post:hover,
+  .edit-post:hover .edit-tooltip,
+  .edit-post:hover .edit-tooltip::before {
+    background: #468faf;
+    color: #ffffff;
+  }
